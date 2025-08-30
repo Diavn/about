@@ -47,7 +47,6 @@ export default function AboutPage() {
       {/* HEADER */}
 <header id="top" className="py-10">
   <Container>
-    <div className="grid md:grid-cols-[160px_minmax(0,1fr)] gap-6 items-start">
       <div className="max-w-prose">
         <h1 className="text-3xl md:text-4xl font-bold leading-tight">Dang Minh Tuan</h1>
         <p className="mt-1 text-slate-700">Lecturer • Researcher • STEM–AI Innovator</p>
@@ -72,7 +71,7 @@ export default function AboutPage() {
           <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs">Curriculum & Mentoring</span>
         </div>
       </div>
-    </div>
+    
   </Container>
 </header>
      
