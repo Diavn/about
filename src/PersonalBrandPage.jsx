@@ -200,10 +200,10 @@ export default function AboutPage() {
           <Section id="contact" title="Contact">
             <div className="flex flex-wrap items-center gap-4 text-sm">
               <a className="inline-flex items-center gap-2 underline" href="mailto:youremail@example.com">
-                <Mail className="w-4 h-4"/> youremail@example.com
+                <Mail className="w-4 h-4"/> tuandang@vnu.edu.vn or minhtuan.dang@gmail.com
               </a>
               <a className="inline-flex items-center gap-2 underline" href="#" target="_blank" rel="noreferrer">
-                <Globe className="w-4 h-4"/> Google Scholar / ORCID
+                <Globe className="w-4 h-4"/> ORCID https://orcid.org/0000-0002-4103-1685
               </a>
             </div>
           </Section>
