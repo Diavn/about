@@ -49,12 +49,7 @@ export default function AboutPage() {
   <Container>
     <div className="grid md:grid-cols-[160px_minmax(0,1fr)] gap-6 items-start">
       {/* Optional avatar: add public/avatar.jpg to repo */}
-      <img
-        src="public/avatar.jpg"
-        alt="Profile"
-        className="w-36 h-36 rounded-md object-cover border bg-slate-100"
-        onError={(e)=>{ e.currentTarget.style.display='none' }}
-      />
+    
 
       {/* RIGHT COLUMN — same text width feel as Research */}
       <div className="max-w-prose">
