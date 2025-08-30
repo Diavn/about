@@ -49,11 +49,11 @@ export default function AboutPage() {
   <Container>
       <div className="max-w-prose">
         <h1 className="text-3xl md:text-4xl font-bold leading-tight">Dang Minh Tuan</h1>
-        <p className="mt-1 text-slate-700">Lecturer • Researcher • STEM–AI Innovator</p>
+        <p className="mt-1 text-slate-700">Lecturer • Researcher • STEM–AI Teacher Training</p>
 
         <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600">
           <span className="inline-flex items-center gap-2">
-            <MapPin className="w-4 h-4"/> Hanoi, Vietnam ↔ USA
+            <MapPin className="w-4 h-4"/> Hanoi, Vietnam
           </span>
           <span className="inline-flex items-center gap-2">
             <Globe className="w-4 h-4"/> VNU University of Education & Mentora Study Hubs
@@ -202,7 +202,7 @@ export default function AboutPage() {
           <Section id="contact" title="Contact">
             <div className="flex flex-wrap items-center gap-4 text-sm">
               <a className="inline-flex items-center gap-2 underline" href="mailto:youremail@example.com">
-                <Mail className="w-4 h-4"/> tuandang@vnu.edu.vn or minhtuan.dang@gmail.com
+                <Mail className="w-4 h-4"/> tuandang@vnu.edu.vn 
               </a>
               <a className="inline-flex items-center gap-2 underline" href="#" target="_blank" rel="noreferrer">
                 <Globe className="w-4 h-4"/> ORCID https://orcid.org/0000-0002-4103-1685
