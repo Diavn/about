@@ -48,10 +48,6 @@ export default function AboutPage() {
 <header id="top" className="py-10">
   <Container>
     <div className="grid md:grid-cols-[160px_minmax(0,1fr)] gap-6 items-start">
-      {/* Optional avatar: add public/avatar.jpg to repo */}
-    
-
-      {/* RIGHT COLUMN — same text width feel as Research */}
       <div className="max-w-prose">
         <h1 className="text-3xl md:text-4xl font-bold leading-tight">Dang Minh Tuan</h1>
         <p className="mt-1 text-slate-700">Lecturer • Researcher • STEM–AI Innovator</p>
