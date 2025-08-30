@@ -45,33 +45,46 @@ export default function AboutPage() {
       
      <main>
       {/* HEADER */}
-    
-        <Container>
-          <div className="grid md:grid-cols-[160px_1fr] gap-6 items-start">
-            {/* Optional avatar: add public/avatar.jpg to repo */}
-            <img
-              src="/public/avatar.jpg"
-              alt="Profile"
-              className="w-36 h-36 rounded-md object-cover border bg-slate-100"
-              onError={(e)=>{e.currentTarget.style.display='none'}}
-            />
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold leading-tight">Dang Minh Tuan</h1>
-              <p className="mt-1">Lecturer • Researcher • STEM–AI Innovator</p>
-              <div className="mt-2 text-sm text-slate-600 space-y-1">
-                <div className="flex items-center gap-2"><MapPin className="w-4 h-4"/> Hanoi, Vietnam ↔ USA</div>
-                <div className="flex items-center gap-2"><Globe className="w-4 h-4"/> VNU University of Education & Mentora Study Hubs</div>
-              </div>
-              <p className="mt-3 text-slate-700">
-                Research interests: STEM/Physics education for preservice teachers; teacher professional development;
-                AI/IT-enhanced instruction (AI, VR/AR); learning analytics & assessment; curriculum design; educational entrepreneurship.
-              </p>
-              <div className="mt-3">
-                <Pill>AI • STEM</Pill><Pill>Learning Analytics</Pill><Pill>Curriculum & Mentoring</Pill>
-              </div>
-            </div>
-          </div>
-        </Container>
+<header id="top" className="py-10">
+  <Container>
+    <div className="grid md:grid-cols-[160px_minmax(0,1fr)] gap-6 items-start">
+      {/* Optional avatar: add public/avatar.jpg to repo */}
+      <img
+        src="/avatar.jpg"
+        alt="Profile"
+        className="w-36 h-36 rounded-md object-cover border bg-slate-100"
+        onError={(e)=>{ e.currentTarget.style.display='none' }}
+      />
+
+      {/* RIGHT COLUMN — same text width feel as Research */}
+      <div className="max-w-prose">
+        <h1 className="text-3xl md:text-4xl font-bold leading-tight">Dang Minh Tuan</h1>
+        <p className="mt-1 text-slate-700">Lecturer • Researcher • STEM–AI Innovator</p>
+
+        <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600">
+          <span className="inline-flex items-center gap-2">
+            <MapPin className="w-4 h-4"/> Hanoi, Vietnam ↔ USA
+          </span>
+          <span className="inline-flex items-center gap-2">
+            <Globe className="w-4 h-4"/> VNU University of Education & Mentora Study Hubs
+          </span>
+        </div>
+
+        <p className="mt-3 text-slate-700">
+          Research interests: STEM/Physics education for preservice teachers; teacher professional development;
+          AI/IT-enhanced instruction (AI, VR/AR); learning analytics & assessment; curriculum design; educational entrepreneurship.
+        </p>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs">AI • STEM</span>
+          <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs">Learning Analytics</span>
+          <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs">Curriculum & Mentoring</span>
+        </div>
+      </div>
+    </div>
+  </Container>
+</header>
+
      
      
         <Container>
