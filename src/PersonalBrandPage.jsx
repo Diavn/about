@@ -43,13 +43,16 @@ export default function AboutPage() {
         </Container>
       </nav>
 
-      {/* HEADER */}
-      <header id="top" className="py-10">
+      # {/* HEADER */}
+      # <header id="top" className="py-10">
+      # </header>
+
+      <main>
         <Container>
           <div className="grid md:grid-cols-[160px_1fr] gap-6 items-start">
             {/* Optional avatar: add public/avatar.jpg to repo */}
             <img
-              src="../public/avatar.jpg"
+              src="/public/avatar.jpg"
               alt="Profile"
               className="w-36 h-36 rounded-md object-cover border bg-slate-100"
               onError={(e)=>{e.currentTarget.style.display='none'}}
@@ -71,9 +74,7 @@ export default function AboutPage() {
             </div>
           </div>
         </Container>
-      </header>
-
-      <main>
+        
         <Container>
           {/* RESEARCH */}
           <Section id="research" title="Research">
