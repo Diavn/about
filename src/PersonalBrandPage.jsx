@@ -42,12 +42,10 @@ export default function AboutPage() {
           </div>
         </Container>
       </nav>
-
-      # {/* HEADER */}
-      # <header id="top" className="py-10">
-      # </header>
-
-      <main>
+      
+     <main>
+      {/* HEADER */}
+       <header id="top" className="py-10">
         <Container>
           <div className="grid md:grid-cols-[160px_1fr] gap-6 items-start">
             {/* Optional avatar: add public/avatar.jpg to repo */}
@@ -74,7 +72,8 @@ export default function AboutPage() {
             </div>
           </div>
         </Container>
-        
+      </header>
+     
         <Container>
           {/* RESEARCH */}
           <Section id="research" title="Research">
