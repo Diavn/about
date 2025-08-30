@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write   # cần quyền push nhánh gh-pages
+  contents: write  # cần để push lên nhánh gh-pages
 
 jobs:
   build-deploy:
@@ -19,16 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # ⚠️ KHÔNG dùng cache ở đây để khỏi cần lock file
 
-      # KHÔNG dùng npm ci vì repo chưa có package-lock.json
       - name: Install deps
-        run: npm install
+        run: npm install   # không dùng npm ci
 
       - name: Build
         run: npm run build
 
-      # Đẩy thư mục dist lên nhánh gh-pages
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
