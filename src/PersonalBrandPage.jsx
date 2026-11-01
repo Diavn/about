@@ -49,20 +49,20 @@ export default function AboutPage() {
   <Container>
       <div className="max-w-prose">
         <h1 className="text-3xl md:text-4xl font-bold leading-tight">Dang Minh Tuan</h1>
-        <p className="mt-1 text-slate-700">Lecturer • Researcher • STEM–AI Teacher Training</p>
+        <p className="mt-1 text-slate-700">PhD • Lecturer &amp; Researcher • STEM / Teacher Education / Pedagogical AI Judgment</p>
 
         <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600">
           <span className="inline-flex items-center gap-2">
             <MapPin className="w-4 h-4"/> Hanoi, Vietnam
           </span>
           <span className="inline-flex items-center gap-2">
-            <Globe className="w-4 h-4"/> VNU University of Education & Mentora Study Hubs
+            <Globe className="w-4 h-4"/> VNU University of Education, Vietnam National University, Hanoi
           </span>
         </div>
 
         <p className="mt-3 text-slate-700">
-          Research interests: STEM/Physics education for preservice teachers; teacher professional development;
-          AI/IT-enhanced instruction (AI, VR/AR); learning analytics & assessment; curriculum design; educational entrepreneurship.
+          Research interests: teacher education, mathematics and science education, AI-mediated pedagogy,
+          pedagogical GenAI judgment, assessment validity, research methods and evidence of independent learning.
         </p>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -80,8 +80,9 @@ export default function AboutPage() {
           {/* RESEARCH */}
           <Section id="research" title="Research">
             <p className="text-slate-700">
-              I focus on AI-enhanced STEM learning, bilingual curriculum design, and learning analytics for preservice teacher training.
-              Current work includes the 5C-AI classroom integration model, teacher upskilling, and the nationwide Mentora Study Hubs.
+              My research examines how teachers make and justify educational decisions, particularly when generative AI
+              contributes to planning, feedback, and assessment. I also study STEM teacher preparation, educational measurement,
+              and the quality of evidence used to infer learners’ independent competence.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mt-4">
               <Card>
@@ -105,6 +106,7 @@ export default function AboutPage() {
           {/* PUBLICATIONS */}
           <Section id="publications" title="Selected Publications">
             <ul className="space-y-3 text-sm leading-relaxed">
+              <li><a className="font-medium underline decoration-slate-300 underline-offset-2 hover:text-indigo-700" href="https://doi.org/10.1080/21532974.2026.2701010" target="_blank" rel="noopener noreferrer">Rethinking digital competence for pre-service teachers in the GenAI era: A conceptual framework for pedagogical GenAI judgment.</a> <span><i>Journal of Digital Learning in Teacher Education</i>, 42(3), 168–181 (2026).</span></li>
               <li>
                 <span className="font-medium">Assessment of Preservice Teachers’ Awareness and Ability to Apply Artificial Intelligence in Science Teaching.</span>
                 <span> Journal of Educational Psychology, 30(6), 267–271, 2025.</span>
@@ -168,8 +170,9 @@ export default function AboutPage() {
           </Section>
 
           {/* PROJECTS */}
-          <Section id="projects" title="Research Projects">
+          <Section id="projects" title="Research & Community Initiatives">
             <ul className="list-disc pl-6 text-sm space-y-2">
+              <li><span className="font-medium">VERS — Vietnam Educational Research Society:</span> Research learning community supporting methods education, open seminars, research resources and scholarly collaboration. <a className="underline hover:text-indigo-700" href="https://diavn.github.io/VERS/" target="_blank" rel="noopener noreferrer">Visit VERS</a>.</li>
               <li>
                 <span className="font-medium">QS.24.04 (2024–present):</span> Developing teaching competencies for primary education students through blended methodology courses. Institutional-level project, VNU University of Education.
               </li>
@@ -189,7 +192,7 @@ export default function AboutPage() {
           {/* EDUCATION */}
           <Section id="education" title="Education">
             <ul className="list-disc pl-6 text-sm space-y-1">
-              <li><b>Ph.D. in Theory, Methods, and Technology of Teaching</b> (2020–2025), VNU University of Education, Hanoi. 
+              <li><b>Ph.D. in Theory, Methods, and Technology of Teaching</b> (degree awarded 2026), VNU University of Education, Hanoi. 
                 Dissertation: Developing STEM Teaching Competencies for Preservice Natural Science Teachers Supported by IT (Energy & Transformation). Supervisors: Assoc. Prof. Dr. Pham Kim Chung; Prof. Dr. Mai Van Hung.
               </li>
               <li><b>M.Sc. in Physics</b> (2007–2008), Claude Bernard University Lyon 1, France. Thesis: Observation of Z0 Events in the First Data of the ATLAS Detector (CERN). Supervisor: Prof. Theodore Todorov.</li>
@@ -201,10 +204,10 @@ export default function AboutPage() {
           {/* CONTACT */}
           <Section id="contact" title="Contact">
             <div className="flex flex-wrap items-center gap-4 text-sm">
-              <a className="inline-flex items-center gap-2 underline" href="mailto:youremail@example.com">
+              <a className="inline-flex items-center gap-2 underline" href="mailto:tuandang@vnu.edu.vn">
                 <Mail className="w-4 h-4"/> tuandang@vnu.edu.vn 
               </a>
-              <a className="inline-flex items-center gap-2 underline" href="#" target="_blank" rel="noreferrer">
+              <a className="inline-flex items-center gap-2 underline" href="https://orcid.org/0000-0002-4103-1685" target="_blank" rel="noopener noreferrer">
                 <Globe className="w-4 h-4"/> ORCID https://orcid.org/0000-0002-4103-1685
               </a>
             </div>
