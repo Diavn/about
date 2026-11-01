@@ -1,223 +1,72 @@
 import React from "react";
-import { Mail, Globe, MapPin, BookOpen, Users, ListChecks, GraduationCap } from "lucide-react";
+import { Mail, Globe, MapPin, BookOpen, GraduationCap, ExternalLink, Microscope, Users, Award, ClipboardCheck } from "lucide-react";
 
-const Container = ({ children }) => (
-  <div className="max-w-5xl mx-auto px-5 md:px-6">{children}</div>
-);
-
-const Section = ({ id, title, children }) => (
-  <section id={id} className="py-10 scroll-mt-20">
-    <h2 className="text-xl md:text-2xl font-semibold mb-4">{title}</h2>
-    {children}
-  </section>
-);
-
-const Card = ({ children }) => (
-  <div className="rounded-lg border border-slate-200 bg-white/80 p-4 shadow-sm">{children}</div>
-);
-
-const Pill = ({ children }) => (
-  <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs mr-2 mb-2">
-    {children}
-  </span>
-);
-
-export default function AboutPage() {
-  return (
-    <div className="min-h-screen bg-white text-slate-800">
-      {/* STICKY NAV */}
-      <nav className="sticky top-0 z-20 border-b bg-white/90 backdrop-blur">
-        <Container>
-          <div className="flex items-center justify-between py-3">
-            <a href="#top" className="font-semibold">About</a>
-            <div className="hidden md:flex gap-4 text-sm">
-              <a href="#research" className="hover:text-indigo-600">Research</a>
-              <a href="#publications" className="hover:text-indigo-600">Publications</a>
-              <a href="#experience" className="hover:text-indigo-600">Experience</a>
-              <a href="#projects" className="hover:text-indigo-600">Projects</a>
-              <a href="#awards" className="hover:text-indigo-600">Awards</a>
-              <a href="#education" className="hover:text-indigo-600">Education</a>
-              <a href="#contact" className="hover:text-indigo-600">Contact</a>
-            </div>
-          </div>
-        </Container>
-      </nav>
-      
-     <main>
-      {/* HEADER */}
-<header id="top" className="py-10">
-  <Container>
-      <div className="max-w-prose">
-        <h1 className="text-3xl md:text-4xl font-bold leading-tight">Dang Minh Tuan</h1>
-        <p className="mt-1 text-slate-700">PhD • Lecturer &amp; Researcher • STEM / Teacher Education / Pedagogical AI Judgment</p>
-
-        <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600">
-          <span className="inline-flex items-center gap-2">
-            <MapPin className="w-4 h-4"/> Hanoi, Vietnam
-          </span>
-          <span className="inline-flex items-center gap-2">
-            <Globe className="w-4 h-4"/> VNU University of Education, Vietnam National University, Hanoi
-          </span>
-        </div>
-
-        <p className="mt-3 text-slate-700">
-          Research interests: teacher education, mathematics and science education, AI-mediated pedagogy,
-          pedagogical GenAI judgment, assessment validity, research methods and evidence of independent learning.
-        </p>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs">AI • STEM</span>
-          <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs">Learning Analytics</span>
-          <span className="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs">Curriculum & Mentoring</span>
-        </div>
-      </div>
-    
-  </Container>
-</header>
-     
-     
-        <Container>
-          {/* RESEARCH */}
-          <Section id="research" title="Research">
-            <p className="text-slate-700">
-              My research examines how teachers make and justify educational decisions, particularly when generative AI
-              contributes to planning, feedback, and assessment. I also study STEM teacher preparation, educational measurement,
-              and the quality of evidence used to infer learners’ independent competence.
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 mt-4">
-              <Card>
-                <BookOpen className="w-5 h-5 text-indigo-600 mb-1"/>
-                <div className="font-medium">AI-STEM Curriculum</div>
-                <div className="text-sm text-slate-600">Design & evaluation of AI-infused STEM modules.</div>
-              </Card>
-              <Card>
-                <ListChecks className="w-5 h-5 text-emerald-600 mb-1"/>
-                <div className="font-medium">Learning Analytics</div>
-                <div className="text-sm text-slate-600">Assessment, dashboards, outcomes tracking.</div>
-              </Card>
-              <Card>
-                <Users className="w-5 h-5 text-amber-600 mb-1"/>
-                <div className="font-medium">Mentoring & Outreach</div>
-                <div className="text-sm text-slate-600">Mentora Hubs • MEI Foundation scholarships.</div>
-              </Card>
-            </div>
-          </Section>
-
-          {/* PUBLICATIONS */}
-          <Section id="publications" title="Selected Publications">
-            <ul className="space-y-3 text-sm leading-relaxed">
-              <li><a className="font-medium underline decoration-slate-300 underline-offset-2 hover:text-indigo-700" href="https://doi.org/10.1080/21532974.2026.2701010" target="_blank" rel="noopener noreferrer">Rethinking digital competence for pre-service teachers in the GenAI era: A conceptual framework for pedagogical GenAI judgment.</a> <span><i>Journal of Digital Learning in Teacher Education</i>, 42(3), 168–181 (2026).</span></li>
-              <li>
-                <span className="font-medium">Assessment of Preservice Teachers’ Awareness and Ability to Apply Artificial Intelligence in Science Teaching.</span>
-                <span> Journal of Educational Psychology, 30(6), 267–271, 2025.</span>
-              </li>
-              <li>
-                <span className="font-medium">A New 5C-AI Model and Selected STEM Teacher Education Models from the Past 20 Years: An International Review and Recommendations for Vietnam.</span>
-                <span> East African Scholars Journal of Education, Humanities, and Literature, 8(6), 2025.</span>
-              </li>
-              <li>
-                <span className="font-medium">STEM Teaching Competency Framework for Preservice Natural Science Teachers.</span>
-                <span> Journal of Educational Psychology, 30(6), 2024.</span>
-              </li>
-              <li>
-                <span className="font-medium">Integrating Educational Robotics into Training Programs for ICT Competence in Teaching.</span>
-                <span> In <i>Intelligent Learning Paradigm and Student Empowerment: Digital Integration and Transformation</i>, 2024.</span>
-              </li>
-              <li>
-                <span className="font-medium">Training Teachers with the Combined Teaching Model in Vietnam.</span>
-                <span> Springer Nature Conference Proceedings, 2023.</span>
-              </li>
-            </ul>
-            <p className="text-xs text-slate-500 mt-2">
-              *Full list available upon request or via Google Scholar/ORCID.*
-            </p>
-          </Section>
-
-          {/* EXPERIENCE */}
-          <Section id="experience" title="Academic Appointments & Professional Experience">
-            <div className="grid md:grid-cols-2 gap-4">
-              <Card>
-                <div className="font-medium">Lecturer, VNU University of Education (2020–present)</div>
-                <div className="text-sm text-slate-600 mt-1">
-                  Courses: Mathematical Olympiad training, Integrated Science, Teaching Physics in English, Energy & Transformation,
-                  Academic Assessment, STEM methods; practicum supervision.
-                </div>
-              </Card>
-              <Card>
-                <div className="font-medium">Research Fellow, VNU University of Education (2024–present)</div>
-                <div className="text-sm text-slate-600 mt-1">STEM/physics education; IT-supported models for preservice teachers.</div>
-              </Card>
-              <Card>
-                <div className="font-medium">CEO, UberMath – Tuniver Education Group (2017–2019)</div>
-                <div className="text-sm text-slate-600 mt-1">Bilingual math education, teacher training, program design.</div>
-              </Card>
-              <Card>
-                <div className="font-medium">Teacher, Hanoi–Amsterdam High School for the Gifted (2011–2017)</div>
-                <div className="text-sm text-slate-600 mt-1">Math & science education in English; Olympiad coaching.</div>
-              </Card>
-              <Card>
-                <div className="font-medium">Deputy Director, FPT School System (2014–2015)</div>
-                <div className="text-sm text-slate-600 mt-1">Curriculum management and teacher professional development.</div>
-              </Card>
-              <Card>
-                <div className="font-medium">Training Specialist, Dept. of Secondary Education, MOET (2013–2014)</div>
-                <div className="text-sm text-slate-600 mt-1">National teacher-training workshops in English for Math/Science.</div>
-              </Card>
-              <Card>
-                <div className="font-medium">Teacher, Southshore Young Adults (SYA) High School, USA (2011–2012)</div>
-              </Card>
-            </div>
-          </Section>
-
-          {/* PROJECTS */}
-          <Section id="projects" title="Research & Community Initiatives">
-            <ul className="list-disc pl-6 text-sm space-y-2">
-              <li><span className="font-medium">VERS — Vietnam Educational Research Society:</span> Research learning community supporting methods education, open seminars, research resources and scholarly collaboration. <a className="underline hover:text-indigo-700" href="https://diavn.github.io/VERS/" target="_blank" rel="noopener noreferrer">Visit VERS</a>.</li>
-              <li>
-                <span className="font-medium">QS.24.04 (2024–present):</span> Developing teaching competencies for primary education students through blended methodology courses. Institutional-level project, VNU University of Education.
-              </li>
-            </ul>
-          </Section>
-
-          {/* AWARDS */}
-          <Section id="awards" title="Honors & Teaching Achievements">
-            <ul className="list-disc pl-6 text-sm text-slate-700 space-y-1">
-              <li>Certificates of Excellence, VNU University of Education (2022, 2023).</li>
-              <li>Recognitions from Hanoi DoET for national team training at IJSO (2013) and KIMC (2014).</li>
-              <li>MOET Award for guiding ISEF national prize-winning projects (2014).</li>
-              <li>Co-author, <i>Energy and Transformation</i> (VNU Press, 2024); Series Editor, <i>OpenMath</i> (Grades 1–8, 2020); <i>Self-study Mathematics in English</i> (Grades 1–9, 2015).</li>
-            </ul>
-          </Section>
-
-          {/* EDUCATION */}
-          <Section id="education" title="Education">
-            <ul className="list-disc pl-6 text-sm space-y-1">
-              <li><b>Ph.D. in Theory, Methods, and Technology of Teaching</b> (degree awarded 2026), VNU University of Education, Hanoi. 
-                Dissertation: Developing STEM Teaching Competencies for Preservice Natural Science Teachers Supported by IT (Energy & Transformation). Supervisors: Assoc. Prof. Dr. Pham Kim Chung; Prof. Dr. Mai Van Hung.
-              </li>
-              <li><b>M.Sc. in Physics</b> (2007–2008), Claude Bernard University Lyon 1, France. Thesis: Observation of Z0 Events in the First Data of the ATLAS Detector (CERN). Supervisor: Prof. Theodore Todorov.</li>
-              <li><b>B.Sc. in Physics</b> (2002–2003), University of Paris 11 – Paris Saclay, France.</li>
-              <li><b>B.Sc. in Physics Education</b> (1999–2002), VNU University of Science, Vietnam National University, Hanoi.</li>
-            </ul>
-          </Section>
-
-          {/* CONTACT */}
-          <Section id="contact" title="Contact">
-            <div className="flex flex-wrap items-center gap-4 text-sm">
-              <a className="inline-flex items-center gap-2 underline" href="mailto:tuandang@vnu.edu.vn">
-                <Mail className="w-4 h-4"/> tuandang@vnu.edu.vn 
-              </a>
-              <a className="inline-flex items-center gap-2 underline" href="https://orcid.org/0000-0002-4103-1685" target="_blank" rel="noopener noreferrer">
-                <Globe className="w-4 h-4"/> ORCID https://orcid.org/0000-0002-4103-1685
-              </a>
-            </div>
-          </Section>
-        </Container>
-      </main>
-
-      <footer className="py-8 border-t text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Dang Minh Tuan — About
-      </footer>
-    </div>
-  );
+const pubs = [
+  ["2026", "Rethinking digital competence for pre-service teachers in the GenAI era: A conceptual framework for pedagogical GenAI judgment", "Journal of Digital Learning in Teacher Education, 42(3), 168–181", "https://doi.org/10.1080/21532974.2026.2701010"],
+  ["2025", "A new 5C-AI model and selected STEM teacher education models from the past 20 years: An international review and application recommendations for Vietnam", "East African Scholars Journal of Education, Humanities, and Literature, 8(6)", "https://doi.org/10.36349/easjehl.2025.v08i06.013"],
+  ["2024", "Integrating educational robotics into the training program for developing students’ ICT competence in teaching", "In Intelligent Learning Paradigm and Student Empowerment, CRC Press / Taylor & Francis", null],
+  ["2023", "Fostering STEM education competency for elementary education students in university of pedagogy in Vietnam", "International Conference on Mathematical Modeling and Computational Science, Springer Nature, pp. 107–124", null],
+  ["2023", "Training teachers by the model of combined teaching in Vietnam", "International Conference on Mathematical Modeling and Computational Science, Springer Nature, pp. 219–234", null],
+  ["2022", "The investigation and some suggestions for improvement of STEM education for students majoring in Natural Science Pedagogy at VNU University of Education", "Proceedings of Scientific Conference for Postgraduates, pp. 156–164", null]
+];
+const Section=({id,kicker,title,children})=><section id={id} className="py-10 md:py-14 border-t border-slate-200 scroll-mt-24"><p className="text-xs font-semibold tracking-widest uppercase text-indigo-700 mb-2">{kicker}</p><h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900 mb-5">{title}</h2>{children}</section>;
+const Card=({title,children})=><div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm"><h3 className="font-semibold text-slate-900 mb-2">{title}</h3><div className="text-sm text-slate-600 leading-relaxed">{children}</div></div>;
+const Anchor=({href,children})=><a href={href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-indigo-700 hover:underline underline-offset-4">{children}<ExternalLink size={13}/></a>;
+export default function AboutPage(){
+ return <div className="min-h-screen bg-slate-50 text-slate-800">
+   <nav className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200"><div className="max-w-6xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-3"><a href="#top" className="font-bold text-indigo-900">Tuan Minh Dang, PhD</a><div className="flex flex-wrap gap-x-4 gap-y-2 text-xs md:text-sm"><a href="#about">About</a><a href="#research">Research</a><a href="#pgj">PGJ</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+   <main className="max-w-6xl mx-auto px-5">
+     <header id="top" className="py-12 md:py-20 grid md:grid-cols-[260px_1fr] gap-9 items-center">
+       <div className="w-full max-w-[260px] mx-auto"><img src="/avatar-2026.jpg" alt="Portrait of Tuan Minh Dang" className="aspect-square w-full rounded-2xl object-cover shadow-lg" onError={e=>{e.currentTarget.src="/avatar.jpg";e.currentTarget.onerror=null;}}/></div>
+       <div><p className="text-indigo-700 text-sm font-semibold tracking-widest uppercase mb-3">Academic profile · November 2026</p><h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-950">Tuan Minh Dang, PhD</h1><p className="text-lg text-slate-700 mt-3">Lecturer & Researcher · Teacher Education · STEM Education · Human–AI Pedagogical Judgment</p><div className="flex flex-wrap items-center gap-4 text-sm text-slate-600 mt-4"><span className="flex items-center gap-1"><MapPin size={16}/> Hanoi, Vietnam</span><span className="flex items-center gap-1"><GraduationCap size={16}/> VNU University of Education, Vietnam National University, Hanoi</span></div><p className="mt-5 max-w-3xl text-slate-700 leading-relaxed">My work asks what counts as credible evidence of human competence and professional judgment when AI participates in educational decisions. I connect teacher education, mathematics and science pedagogy, educational assessment, and the sociology of professional work.</p><div className="flex flex-wrap gap-3 mt-6 text-sm"><a href="#pgj" className="rounded-lg bg-indigo-800 text-white px-5 py-3 hover:bg-indigo-700">Explore PGJ research</a><a href="#publications" className="rounded-lg border border-indigo-300 bg-white px-5 py-3 hover:bg-indigo-50">Selected publications</a></div></div>
+     </header>
+     <Section id="about" kicker="Biography" title="About"><p className="max-w-4xl leading-relaxed">I am a lecturer and researcher at VNU University of Education, Vietnam National University, Hanoi, with more than 15 years of experience across mathematics and physics teaching, STEM teacher education, curriculum development and research. My academic background combines doctoral work in teaching methodology and educational technology with earlier physics research in France, including ATLAS/CERN-related work. I have taught advanced mathematics in Vietnamese and international school settings and work with prospective teachers on instructional design, assessment and technology-supported learning.</p><p className="max-w-4xl mt-4 leading-relaxed">My current research focuses on how educators evaluate, adapt and justify AI-supported decisions—and on the kinds of evidence needed to distinguish independently demonstrated professional competence from polished human–AI outputs.</p></Section>
+     <Section id="research" kicker="Research profile" title="Research areas"><div className="grid md:grid-cols-2 gap-4">
+       <Card title="Professional judgment & AI">Pedagogical GenAI Judgment (PGJ), human–AI decision making, teacher agency, interpretive authority, accountability and educational governance.</Card>
+       <Card title="Assessment & evidence">Assessment validity, performance-based evidence, independent reasoning, process traces, learning analytics and educational measurement.</Card>
+       <Card title="Teacher education & STEM">Pre-service science and primary teacher education, mathematics/physics pedagogy, STEM/STEAM integration, digital teaching competence and curriculum development.</Card>
+       <Card title="Education systems & institutions">Teacher professionalization, organizational change and the social and policy context of education and digital transformation in Vietnam and Southeast Asia.</Card>
+     </div></Section>
+     <Section id="pgj" kicker="Conceptual contribution" title="Pedagogical GenAI Judgment (PGJ)">
+       <div className="rounded-2xl bg-indigo-950 text-indigo-50 p-6 md:p-8"><p className="text-xl md:text-2xl font-medium leading-relaxed">When AI helps produce a convincing lesson plan or assessment, the quality of the finished product alone cannot establish who exercised the pedagogical judgment behind it.</p><p className="text-sm text-indigo-200 mt-4">Research problem underlying PGJ · conceptual framework published in 2026</p></div>
+       <p className="max-w-4xl mt-6 leading-relaxed">My 2026 conceptual article introduces PGJ as pre-service teachers’ capacity to determine when and why to use generative AI, formulate pedagogically meaningful prompts, evaluate and revise AI output, adapt it to learners and curriculum, disclose AI use, and remain responsible for final decisions. The article proposes the DigiGen-PST 2030 framework, integrating four connected layers.</p>
+       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-5">{[
+         ["01","Foundational digital competence","Information, digital creation, safety and informed use of AI."],
+         ["02","Pedagogical transformation","Translate technologies into learning design, feedback and assessment."],
+         ["03","Pedagogical GenAI judgment","Decide, prompt, verify, contextualize, disclose and account."],
+         ["04","Future-skills orientation","Cultivate learner agency, creativity, collaboration and responsibility."]
+       ].map(x=><Card key={x[0]} title={x[0]+" · "+x[1]}>{x[2]}</Card>)}</div>
+       <p className="mt-5 text-sm text-slate-600">PGJ and DigiGen-PST 2030 are conceptual proposals; the published article does not claim completed psychometric or intervention validation. <Anchor href="https://doi.org/10.1080/21532974.2026.2701010">Read the published paper</Anchor></p>
+     </Section>
+     <Section id="agenda" kicker="Research agenda" title="Current and future directions"><div className="grid md:grid-cols-3 gap-4">
+       <Card title="1 · Construct and measurement">Examine the boundaries of PGJ alongside PCK, TPACK and AI literacy; study authentic judgment tasks, expert reviews, scoring quality and alternative explanations.</Card>
+       <Card title="2 · Human–AI evidence">Investigate verification, revision, reliance and independent performance using task products and decision-process traces, with attention to measurement validity.</Card>
+       <Card title="3 · Institutions and governance">Explore how GenAI reshapes professional authority, responsibility and educational decision making across Vietnamese institutions, with longer-term comparative potential.</Card>
+     </div><p className="text-sm text-slate-600 mt-4">These directions describe an ongoing research programme and prospective studies, not completed empirical findings or confirmed multi-institutional partnerships.</p></Section>
+     <Section id="publications" kicker="Scholarly record" title="Selected publications"><ol className="space-y-4">{pubs.map((p,i)=><li key={i} className="border-l-2 border-indigo-200 pl-4"><p className="text-xs uppercase tracking-wide font-semibold text-indigo-700">{p[0]}</p><p className="font-medium text-slate-900 mt-1">{p[1]}</p><p className="text-sm text-slate-600 mt-1">{p[2]}{p[3]&&<> · <Anchor href={p[3]}>DOI</Anchor></>}</p></li>)}</ol><p className="text-sm text-slate-600 mt-4">A curated selection, not a complete bibliography. Manuscripts in preparation or under review are not listed as publications.</p></Section>
+     <Section id="experience" kicker="Academic work" title="Appointments and professional experience"><div className="grid md:grid-cols-2 gap-4">
+       <Card title="Lecturer & Researcher · VNU University of Education (2020–present)">Teacher preparation, integrated science and primary education, STEM/STEAM methodology, assessment, educational technology, teaching physics in English and academic supervision.</Card>
+       <Card title="Mathematics Teacher · Reigate Grammar School Vietnam (2023–2026)">IB Diploma, A-Level and IGCSE mathematics in English; advanced mathematics instruction and assessment.</Card>
+       <Card title="Mathematics & Physics Teacher · Hanoi–Amsterdam High School for the Gifted (2011–2017)">Advanced secondary teaching and preparation for mathematics and science competitions.</Card>
+       <Card title="Teacher training & education initiatives">Earlier work in national teacher professional development, bilingual mathematics programmes, curriculum and educational projects.</Card>
+       <Card title="Scientific Secretary · VNU AI Tutor Project (2026–present)">A VNU-funded initiative on intelligent tutoring for lower-secondary mathematics; total project budget VND 5 billion (approximately USD 190,000). This is total project funding, not a personal grant.</Card>
+       <Card title="Earlier physics research">ATLAS/CERN-related master's research; computational modelling and later electromagnetic/metamaterials research in Vietnam.</Card>
+     </div></Section>
+     <Section id="education" kicker="Qualifications" title="Education and credential evaluation"><div className="space-y-4">
+       <Card title="PhD · Theory, Methodology and Technology of Teaching · VNU Hanoi, 2026">Dissertation defended 30 October 2025; degree awarded 24 February 2026. Research on fostering pre-service natural science teachers’ STEM teaching competence with information-technology support.</Card>
+       <Card title="U.S. academic credential evaluation · Trustforte, 31 August 2026">Trustforte evaluated the VNU doctorate as equivalent to a U.S. Doctor of Philosophy degree in Educational Technology. This is a third-party credential evaluation; the doctorate was awarded by Vietnam National University, Hanoi, not by a U.S. institution.</Card>
+       <Card title="MSc · Physics · Université Claude Bernard Lyon 1, France, 2008">Research in the ATLAS/CERN particle-physics context.</Card>
+       <Card title="BSc (Honours) · Physics · Université Paris 11, France, 2003">Undergraduate honours programme in physics.</Card>
+       <Card title="BSc (Honours/Talented Students) · Mathematics and Physics · VNU University of Science, 2002">Mathematics and physics training.</Card>
+       <Card title="Bok Teaching Certificate · Higher Education Pedagogy, 2018">Harvard Derek Bok Center for Teaching and Learning / HarvardX online programme; a teaching certificate, not a Harvard degree.</Card>
+     </div></Section>
+     <Section id="service" kicker="Scholarly community" title="Service and professional engagement"><div className="grid md:grid-cols-2 gap-4">
+       <Card title="Editorial and scholarly service">Editorial Board Member, Journal of College Science Teaching (2026–2027); Grand Awards Judge, Regeneron ISEF, Physics and Astronomy (2023).</Card>
+       <Card title="Science and research communities">International Philosophy Olympiad delegation leadership; engagement in teacher education, educational research training and cross-institutional scholarly collaboration.</Card>
+       <Card title="VERS · Vietnam Educational Research Society">An academic community for research learning, seminars, shared resources and connecting collaborators. <Anchor href="https://diavn.github.io/VERS/">VERS website</Anchor></Card>
+       <Card title="Languages">Vietnamese (native); English and French (professional working proficiency).</Card>
+     </div></Section>
+     <Section id="contact" kicker="Contact and profiles" title="Get in touch"><div className="flex flex-wrap gap-5 text-sm"><a className="inline-flex items-center gap-2 text-indigo-700 hover:underline" href="mailto:tuandang@vnu.edu.vn"><Mail size={17}/> tuandang@vnu.edu.vn</a><Anchor href="https://orcid.org/0000-0002-4103-1685">ORCID 0000-0002-4103-1685</Anchor><Anchor href="https://diavn.github.io/VERS/">VERS Research Community</Anchor></div><p className="text-xs text-slate-500 mt-5">Public academic profile updated November 2026. Research plans are described as directions rather than completed results.</p></Section>
+   </main><footer className="border-t bg-white py-7 text-center text-xs text-slate-500">© {new Date().getFullYear()} Tuan Minh Dang · Academic profile</footer>
+ </div>;
 }
