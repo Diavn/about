@@ -59,7 +59,7 @@ export default function AboutPage(){
        <Card title="MSc · Physics · Université Claude Bernard Lyon 1, France, 2008">Research in the ATLAS/CERN particle-physics context.</Card>
        <Card title="BSc (Honours) · Physics · Université Paris 11, France, 2003">Undergraduate honours programme in physics.</Card>
        <Card title="BSc (Honours/Talented Students) · Mathematics and Physics · VNU University of Science, 2002">Mathematics and physics training.</Card>
-       <Card title="Bok Teaching Certificate · Higher Education Pedagogy, 2018">Harvard Derek Bok Center for Teaching and Learning / HarvardX online programme; a teaching certificate, not a Harvard degree.</Card>
+       <Card title="Bok Teaching Certificate · Higher Education Pedagogy, 2018">Harvard Derek Bok Center for Teaching and Learning / HarvardX online programme; a teaching certificate.</Card>
      </div></Section>
      <Section id="service" kicker="Scholarly community" title="Service and professional engagement"><div className="grid md:grid-cols-2 gap-4">
        <Card title="Editorial and scholarly service">Editorial Board Member, Journal of College Science Teaching (2026–2027); Grand Awards Judge, Regeneron ISEF, Physics and Astronomy (2023).</Card>
