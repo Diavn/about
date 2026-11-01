@@ -3,7 +3,6 @@ import { Mail, Globe, MapPin, BookOpen, GraduationCap, ExternalLink, Microscope,
 
 const pubs = [
   ["2026", "Rethinking digital competence for pre-service teachers in the GenAI era: A conceptual framework for pedagogical GenAI judgment", "Journal of Digital Learning in Teacher Education, 42(3), 168–181", "https://doi.org/10.1080/21532974.2026.2701010"],
-  ["2025", "A new 5C-AI model and selected STEM teacher education models from the past 20 years: An international review and application recommendations for Vietnam", "East African Scholars Journal of Education, Humanities, and Literature, 8(6)", "https://doi.org/10.36349/easjehl.2025.v08i06.013"],
   ["2024", "Integrating educational robotics into the training program for developing students’ ICT competence in teaching", "In Intelligent Learning Paradigm and Student Empowerment, CRC Press / Taylor & Francis", null],
   ["2023", "Fostering STEM education competency for elementary education students in university of pedagogy in Vietnam", "International Conference on Mathematical Modeling and Computational Science, Springer Nature, pp. 107–124", null],
   ["2023", "Training teachers by the model of combined teaching in Vietnam", "International Conference on Mathematical Modeling and Computational Science, Springer Nature, pp. 219–234", null],
